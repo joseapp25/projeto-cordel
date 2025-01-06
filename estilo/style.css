@@ -5,15 +5,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-root {
-    --fonte01: Verdana, Tahoma, sans-serif;
-    --fonte02: "Passion One";
-    --fonte03: "Sriracha";
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: "Passion One", cursive;
+    --fonte03: "Sriracha", cursive;
 }
 
 * {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -42,6 +43,7 @@ header > h1 {
     font-variant: small-caps;
     padding-top: 50px;
     font-family: var(--fonte02);
+    font-size: 10vw;
 }
 
 header > p {
@@ -51,24 +53,27 @@ header > p {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte03);
+    font-size: 3.5vw;
 }
 
 section.normal {
     background-color: white;
+    padding-left: 40px;
     color: black;
 }
 
 section.imagem {
     background-color: rgb(65, 62, 62);
+    padding-left: 30px;
     color: white;
 }
 
 section.imagem > p {
     background-color: black;
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 
 footer {
